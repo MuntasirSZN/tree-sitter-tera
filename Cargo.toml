@@ -1,18 +1,16 @@
 [package]
 name = "tree-sitter-tera"
-description = "Tree-sitter grammar for the Tera templating language."
 version = "0.1.0"
-authors = ["uncenter <uncenter@uncenter.dev>"]
-license = "MIT"
-readme = "README.md"
-keywords = ["incremental", "parsing", "tree-sitter", "tera"]
-categories = ["parsing", "text-editors"]
-repository = "https://github.com/uncenter/tree-sitter-tera"
 edition = "2021"
-autoexamples = false
-
+description = "Tree-sitter grammar for the Tera templating language."
+readme = "README.md"
+repository = "https://github.com/uncenter/tree-sitter-tera"
+license = "MIT"
+keywords = ["incremental", "parsing", "tera", "tree-sitter"]
+categories = ["parsing", "text-editors"]
 build = "bindings/rust/build.rs"
 include = ["bindings/rust/*", "grammar.js", "queries/*", "src/*"]
+autoexamples = false
 
 [lib]
 path = "bindings/rust/lib.rs"
@@ -20,8 +18,8 @@ path = "bindings/rust/lib.rs"
 [dependencies]
 tree-sitter-language = "0.1"
 
-[build-dependencies]
-cc = "1.1.22"
-
 [dev-dependencies]
 tree-sitter = "0.24.3"
+
+[build-dependencies]
+cc = "1.1.22"
